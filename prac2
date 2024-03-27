@@ -1,0 +1,35 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+//Comparison 
+contract ComparisonOperators {
+    uint256 public result;
+
+    // Equality and Inequality
+    function isEqual(uint256 a, uint256 b) public {
+        result = (a == b) ? 1 : 0; // Equal
+        
+    }
+
+    function isNotEqual(uint256 a, uint256 b) public {
+        result = (a != b) ? 1 : 0; // Not Equal
+    }
+
+    // Greater than and Less than
+    function GreaterThan(uint256 a, uint256 b) public {
+        result = (a > b) ? 1 : 0; // Greater than
+    }
+
+    function LessThan(uint256 a, uint256 b) public {
+        result = (a < b) ? 1 : 0; // Less than
+    }
+
+    // Greater than or equal to and Less than or equal to
+    function isGreaterThanOrEqual(uint256 a, uint256 b) public {
+        result = (a >= b) ? 1 : 0; // Greater than or equal to
+    }
+
+    function isLessThanOrEqual(uint256 a, uint256 b) public {
+        result = (a <= b) ? 1 : 0; // Less than or equal to
+    }
+}
